@@ -1,3 +1,5 @@
+part of com.tyba.app.home;
+
 class MyHomePageState {
   MyHomePageState({
     required this.contador,

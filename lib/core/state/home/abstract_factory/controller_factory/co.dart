@@ -1,7 +1,7 @@
 part of com.tyba.app.home;
 
-class ControllerCO extends BaseController<ColombiaState>{
-  ControllerCO() : super(ColombiaState(contador: 0));
+class ControllerCO extends BaseController<ColombiaState> {
+  ControllerCO(ColombiaState initState) : super(initState);
   StateNotifierProviderRef<ControllerCO, ColombiaState>? _ref;
 
   set ref(StateNotifierProviderRef<dynamic, dynamic> newRef) {

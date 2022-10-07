@@ -5,11 +5,8 @@ class SubViewPe extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    ControllerPE viewModel =
-        ref.read(ProvderSingleton.instace.currentProvider.notifier)
-            as ControllerPE;
-    MyHomePageState viewState =
-        ref.watch(ProvderSingleton.instace.currentProvider) as MyHomePageState;
+    ControllerPE viewModel = ref.read(homeProvider.notifier) as ControllerPE;
+    PeruState viewState = ref.watch(homeProvider) as PeruState;
     return Scaffold(
       appBar: AppBar(
         title: const Text('Col'),

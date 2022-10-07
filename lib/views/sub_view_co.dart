@@ -5,11 +5,8 @@ class SubViewCo extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    ControllerCO viewModel =
-        ref.read(ProvderSingleton.instace.currentProvider.notifier)
-            as ControllerCO;
-    MyHomePageState viewState =
-        ref.watch(ProvderSingleton.instace.currentProvider) as MyHomePageState;
+    ControllerCO viewModel = ref.read(homeProvider.notifier) as ControllerCO;
+    ColombiaState viewState = ref.watch(homeProvider) as ColombiaState;
     return Scaffold(
       appBar: AppBar(
         title: const Text('Col'),

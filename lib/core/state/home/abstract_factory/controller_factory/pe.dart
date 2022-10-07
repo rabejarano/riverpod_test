@@ -1,7 +1,7 @@
 part of com.tyba.app.home;
 
 class ControllerPE extends BaseController<PeruState> {
-  ControllerPE() : super(PeruState(contador: 0));
+  ControllerPE(PeruState initState) : super(initState);
   StateNotifierProviderRef<ControllerPE, PeruState>? _ref;
 
   set ref(StateNotifierProviderRef<dynamic, dynamic> newRef) {
